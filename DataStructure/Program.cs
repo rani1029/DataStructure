@@ -15,6 +15,12 @@ namespace DataStructure
 
             Console.WriteLine(" linked list after inserting new element");
             list.Display();
+            list.Pop();
+            Console.WriteLine();
+            Console.WriteLine(" linked list after removing first element");
+            list.Display();
+
+
 
 
         }
