@@ -7,7 +7,7 @@ namespace DataStructure
     class LinkedList
     {
         internal Node head;
-        internal void Add(int data)
+        internal void Append(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
@@ -33,10 +33,14 @@ namespace DataStructure
                 Console.WriteLine("LinkedList is empty");
                 return;
             }
-            while (temp != null)
+            else
             {
-                Console.Write(temp.data + " ");
-                temp = temp.next;
+
+                while (temp != null)
+                {
+                    Console.Write(temp.data + " ");
+                    temp = temp.next;
+                }
             }
         }
     }
